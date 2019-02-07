@@ -84,7 +84,7 @@ header div.links a{
     }
 }
 
-@media all and (max-height: 490px) and (orientation: portrait){
+@media all and (max-height: 568px) and (orientation: portrait){
     header .name {
         margin-top: 0;
     }
