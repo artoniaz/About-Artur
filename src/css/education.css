@@ -1,0 +1,55 @@
+div.education {
+    background-color: white;
+    z-index: -1;
+    overflow: hidden;
+}
+
+div.edu {
+    width: 100%;
+    text-align: center;
+    padding: 5rem 2rem 0 2rem;
+    font-size: 1.6rem;
+    transform: translate(100vw, 0);
+    transition: 1s;
+}
+
+div.edu:nth-child(1), div.edu:nth-child(3), div.edu:nth-child(5){
+    transform: translate(-100vw, 0);
+}
+
+div.edu.eduActive{
+    transform: translate(0,0);
+}
+
+#educationSection .title p {
+    font-size: 1rem;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+div.edu img {
+    width: 40vw;
+    max-height: 40vw;
+}
+
+div.edu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@media all and (orientation: landscape) {
+    div.edu img {
+        width: 20vw;
+        max-height: 20vw;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    #educationSection .title p {
+        font-size: 2rem;
+    }
+}
+

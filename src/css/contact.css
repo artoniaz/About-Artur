@@ -1,0 +1,49 @@
+
+div.contactDetails{
+    text-align: center;
+    background-color: white;
+    padding-left: 5rem;
+}
+
+div.contactDetails h2{
+    padding: 2rem;
+}
+
+div.icons {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+div.icons i {
+    text-indent: 1rem;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+div.icons a, div.icons p {
+    text-indent: 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+div.icons i:nth-child(1) a, div.icons i:nth-child(2) a{
+    color: blue;
+}
+
+@media all and (max-width: 400px) {
+    div.contactDetails{
+        width: auto;
+    }
+    div.icons a, div.icons p {
+        text-indent: 0;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    div.contactDetails h2{
+        font-size: 2.5rem;
+    }
+}
+

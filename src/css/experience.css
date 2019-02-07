@@ -1,0 +1,272 @@
+div.sliderImg {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+}
+
+div.sliderImg img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+div.sliderImg button {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+
+    transform: translate(-50%, 0);
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button.CVbtn a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+div.slider i {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5rem 1rem;
+    cursor: pointer;
+}
+
+div.sliderImg i.left {
+    left: 0;
+}
+
+div.sliderImg i.right {
+    right: 0;
+}
+
+div.dots {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+div.dot {
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div.dots div.activeDot {
+    box-shadow: 0 0 0 5px red;
+}
+
+i.leftMark, i.rightMark {
+    display: none;
+}
+
+div.sliderTxt{
+    display: none;
+}
+
+div.mobileDescribtion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+    z-index: 9;
+    font-size: 1.6rem;
+    padding: 3rem;
+    line-height: 2.5rem;
+    display: none;
+}
+
+div.mobileDescribtion span:nth-child(1), div.mobileDescribtion span:nth-child(3) {
+    font-weight: 700;
+}
+
+div.mobileDescribtion div.describtionBcg{
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+div.closeDescribtion{
+    position: absolute;
+    top: -7%;
+    right: -7%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+div.mobileDescribtion i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 320px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (min-width: 568px) and (orientation: landscape) {
+    div.slider {
+        background-color: white;
+    }
+
+    div.sliderImg {
+        width: 65%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+
+    div.sliderImg i {
+        font-size: 5rem;
+        padding: 10rem 2rem;
+    }
+
+    div.sliderImg i.left {
+        left: -8%;
+    }
+
+    div.sliderImg i.right {
+        right: -8%;
+    }
+}
+
+@media all and (min-width: 812px) and (orientation: landscape) {
+    div.sliderImg {
+        width: 50%;
+        height: 85vh;
+    }
+    div.sliderImg i.left {
+        left: -12%;
+    }
+
+    div.sliderImg i.right {
+        right: -12%;
+    }
+}
+
+@media all and (min-width: 768px) and (orientation: portrait) {
+    div.sliderImg {
+        width: 100%;
+        height: 60vh;
+    }
+
+    div.sliderImg i {
+        font-size: 8rem;
+        padding: 10rem 2rem;
+    }
+
+    div.sliderImg i.left {
+        left: 0;
+    }
+
+    div.sliderImg i.right {
+        right: 0;
+    }
+    div.sliderImg button {
+        font-size: 3rem;
+        border: 5px solid black;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    div.slider{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    div.sliderImg {
+        width: 50%;
+        height: 87vh;
+    }
+
+    div.sliderImg i{
+        display: none;
+    }
+    div.sliderImg button {
+        display: none;
+    }
+    div.dots {
+        top: auto;
+        bottom: 5%;
+        left: 0;
+        transform: translate(0, 0);
+        width: 200%;
+        justify-content: center;
+    }
+    div.dot{
+        margin: 0 3rem;
+    }
+    div.slider i.leftMark, div.slider i.rightMark {
+        display: block;
+        font-size: 7rem;
+        padding: 30vh 1rem;
+    }
+    i.leftMark{
+        left: 0;
+    }
+    i.rightMark{
+        right: 0;
+    }
+    div.sliderTxt{
+        width: 50%;
+        display: block;
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0 10rem 0 0;
+        text-align: justify;
+    }
+    div.sliderTxt span{
+        font-weight: 700;
+    }
+    div.sliderTxt p{
+        text-indent: 5rem;
+        margin-top: 2rem;
+    }
+    button.CVbtn{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        display: block;
+        margin: 1rem auto 0 auto;
+        cursor: pointer;
+    }
+    div.sliderTxt span a{
+        text-decoration: none;
+        color: blue;
+    }
+}
+
+

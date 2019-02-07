@@ -1,0 +1,129 @@
+#aboutMeSection{
+    background-color: white;
+}
+
+div.motivations{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+div.motivation{
+    border: 2px solid black;
+    position: relative;
+    margin-top: 4rem;
+}
+
+div.motivation h2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    z-index: 2;
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+div.motivation p{
+    font-size: 1.6rem;
+    padding: 3rem 2rem;
+    text-align: justify;
+}
+
+div.hobby{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    border-bottom: 2px solid white;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.hobby h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100% 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: none;
+}
+
+div.hobby h2.hobbiesTxtActive{
+    display: block;
+}
+
+
+#climbImg{
+    background-image: url("../img/hobbies/kazbek.jpg");
+}
+#poolImg{
+    background-image: url("../img/hobbies/bilard.jpg");
+}
+#paintImg{
+    background-image: url("../img/hobbies/rafael.jpg");
+}
+#cohenImg{
+    background-image: url("../img/hobbies/cohen.jpg");
+}
+#allenImg{
+    background-image: url("../img/hobbies/allen.jpg");
+}
+#travelImg{
+    background-image: url("../img/hobbies/travel.jpg");
+}
+
+@media all and (min-width: 568px) and (orientation: landscape){
+    div.hobbies{
+        background-color: black;
+    }
+    div.hobby{
+        width: 80%;
+        margin: 0 auto;
+        height: 80vh;
+    }
+}
+
+@media all and (min-width: 812px) and (orientation: landscape){
+
+    div.hobby:nth-child(4){
+        background-position: top;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape){
+    div.motivations{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    div.motivation{
+        width: 40%;
+    }
+    div.hobbies{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    div.hobby{
+        margin-top: 5rem;
+        width: 40%;
+        height: 40vh;
+        border: 2px solid white;
+    }
+    div.hobby:first-child, div.hobby:nth-child(2){
+        margin-top: 0;
+        width: 40%;
+        height: 40vh;
+        border: 2px solid white;
+    }
+}
+

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

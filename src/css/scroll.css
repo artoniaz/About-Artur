@@ -1,0 +1,120 @@
+#menu {
+    position: fixed;
+    top: -20%;
+    left: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+section.menuActive {
+    animation: showMenu 1s linear forwards;
+}
+
+section.hideMenu{
+    animation: hideMenuAnim 1s linear forwards;
+}
+
+#menu div {
+    margin: 1rem;
+}
+
+#menu span {
+    padding-left: 1rem;
+}
+
+#menu i {
+    cursor: pointer;
+    color: black;
+}
+
+#menu ul.menuList {
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    font-size: 1.6rem;
+    background-color: white;
+    list-style: none;
+    z-index: 5;
+}
+
+#menu ul.menuListActive {
+    animation: menuAnim 0.7s linear forwards;
+}
+
+.menuList li {
+    padding: 0.5rem;
+}
+
+.menuList a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#menu .links span{
+    display: none;
+}
+
+@keyframes showMenu {
+    0% {
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes hideMenuAnim {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -20%;
+    }
+}
+
+@keyframes menuAnim {
+    0% {
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    #menu {
+        display: flex;
+        padding: 0 5rem;
+    }
+    #menu div:nth-child(1) {
+        display: none;
+    }
+    #menu ul.menuList {
+        position: initial;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+    }
+    .menuList li {
+        padding: 1rem;
+    }
+    .menuList li:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    #menu .links{
+        font-size: 4rem;
+    }
+    #menu .links span{
+        display: inline-block;
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+}
+

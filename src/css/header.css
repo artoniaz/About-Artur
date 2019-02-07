@@ -1,0 +1,207 @@
+header {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+header div.background {
+    background-image: url("../img/background1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+div.opacity {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .name {
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    display: inline-block;
+}
+
+.name p {
+    text-align: right;
+    font-size: 1rem;
+    letter-spacing: 0.8rem;
+}
+
+header h2 {
+    margin: 4rem 2rem 0 2rem;
+    line-height: 3rem;
+}
+
+header ul {
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+header ul li {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 3rem;
+    list-style: none;
+    padding: 1rem;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header div.links{
+    font-size: 4rem;
+}
+
+header div.links a{
+    color: white;
+
+}
+
+@media all and (max-width: 320px) and (orientation: portrait){
+    header .name {
+        margin-top: 3rem;
+    }
+    header h2 {
+        margin: 2rem 2rem 0 2rem;
+        line-height: 2.5rem;
+    }
+    header ul {
+        margin-top: 2rem;
+    }
+    header ul li {
+        font-size: 1.4rem;
+        margin: 1rem 3rem;
+        padding: 0.8rem;
+    }
+}
+
+@media all and (min-width: 568px) and (orientation: landscape){
+    header div.background {
+        height: auto;
+    }
+    div.opacity {
+        height: auto;
+    }
+    header .name {
+        margin-top: 4rem;
+    }
+    .name p {
+        letter-spacing: 0.6rem;
+    }
+    header h2 {
+        margin: 3rem 2rem 0 2rem;
+        line-height: 2.5rem;
+    }
+    header ul {
+        margin-top: 3rem;
+    }
+    header ul li {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+    header ul li:last-child {
+        margin: 1rem 3rem 0 3rem;
+    }
+}
+
+@media all and (min-width: 768px) and (orientation: portrait){
+    header .name {
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    .name p {
+        font-size: 2rem;
+    }
+    header h2 {
+        margin: 5rem 4rem 0 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+    header ul li {
+        font-size: 2.5rem;
+        margin: 1.5rem 5rem;
+        padding: 1.5rem;
+    }
+
+
+}
+
+@media all and (min-width: 1024px) and (orientation: portrait){
+    header .name {
+        font-size: 5rem;
+        margin-top: 10rem;
+    }
+    .name p {
+        font-size: 2rem;
+    }
+    header h2 {
+        margin: 10rem 6rem 0 6rem;
+        line-height: 5rem;
+        font-size: 3rem;
+    }
+    header ul li {
+        font-size: 3rem;
+        margin: 2rem 6rem;
+        padding: 2rem;
+    }
+    header ul{
+        margin-top: 10rem;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape){
+    header{
+        display: flex;
+    }
+    header div.opacity {
+        min-height: 100vh;
+    }
+    header div.background {
+        min-height: 100vh;
+        width: 60%;
+    }
+    div.photo{
+        background-image: url("../img/photo.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 40%;
+        min-height: 100vh;
+    }
+    header .name {
+        font-size: 3rem;
+    }
+    header h2 {
+        margin: 7rem 3rem 0 3rem;
+        line-height: 5rem;
+        font-size: 3rem;
+    }
+    header ul {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    header ul li {
+        margin: 1.5rem;
+        padding: 0;
+        border: none;
+        font-size: 2rem;
+
+    }
+    header ul li:last-child {
+        margin: 1.5rem;
+    }
+    header ul a {
+        display: inline-block;
+        padding: 1rem;
+        border: 5px solid white;
+        width: 20rem;
+    }
+}

@@ -1,0 +1,162 @@
+.technologies div.title p {
+    font-size: 1rem;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+}
+
+div.tools {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    overflow: hidden;
+}
+
+.tools div.tool {
+    position: relative;
+    width: 40%;
+    margin-top: 7rem;
+}
+
+.tools div.tool img {
+    width: 100%;
+    max-height: 25vh;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+div.tool img.logoActive {
+    animation: logoAnim 1s linear forwards;
+}
+
+.description {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    width: 240%;
+    color: white;
+    background-color: black;
+    margin-top: 4rem;
+    display: none;
+    z-index: 3;
+}
+
+.description button {
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: 1rem auto 0 auto;
+    cursor: pointer;
+
+}
+
+div.tool:last-child .description {
+    top: auto;
+    bottom: 120%;
+}
+
+.tool:nth-child(1) p.description, .tool:nth-child(3) p.description, .tool:nth-child(5) p.description, .tool:nth-child(7) p.description, .tool:nth-child(9) p.description {
+    transform: translate(-120%, 0);
+}
+
+.tool:nth-child(2) p.description, .tool:nth-child(4) p.description, .tool:nth-child(6) p.description, .tool:nth-child(8) p.description, .tool:nth-child(10) p.description {
+    transform: translate(50%, 0);
+}
+
+.tool:nth-child(11) p.description {
+    transform: translate(-150%, 0);
+
+}
+
+.descriptionActiveLeft {
+    display: block;
+    animation: descriptionAnimLeft 1s linear forwards;
+}
+
+.descriptionActiveRight {
+    display: block;
+    animation: descriptionAnimRight 1s linear forwards;
+}
+
+.descriptionActiveGit {
+    display: block;
+    animation: descriptionGitAnim 1s linear forwards;
+}
+
+@keyframes descriptionAnimLeft {
+    0% {
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes descriptionAnimRight {
+    0% {
+    }
+    100% {
+        transform: translate(-60%, 0)
+    }
+}
+
+@keyframes descriptionGitAnim {
+    0% {
+    }
+    100% {
+        transform: translate(-25%, 0);
+    }
+}
+
+@keyframes logoAnim {
+    0% {
+    }
+    100% {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+}
+
+
+
+@media all and (min-width: 568px) and (orientation: landscape){
+    .tools div.tool {
+        width: 35%;
+        margin-top: 5rem;
+    }
+
+    .tools div.tool img {
+        width: 40%;
+        height: 100%;
+        max-height: 25vh;
+        margin: 0 auto;
+        display: block;
+    }
+    .description{
+        border-radius: 15px;
+    }
+}
+
+@media all and (min-width: 1024px){
+    div.tools {
+        justify-content: space-around;
+    }
+    .tools div.tool {
+        width: 33.4%;
+    }
+
+    .tools div.tool img {
+        width: 40%;
+        height: 100%;
+        max-height: 25vh;
+        margin: 0 auto;
+        display: block;
+    }
+}

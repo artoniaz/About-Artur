@@ -1,0 +1,44 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div.links {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+}
+
+div.links a {
+    padding: 1rem;
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    footer ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    footer li{
+        padding: 1rem;
+    }
+    footer li:hover{
+        background-color: gray;
+    }
+}
