@@ -34,10 +34,11 @@ div.icons i:nth-child(1) a, div.icons i:nth-child(2) a{
 
 @media all and (max-width: 400px) {
     div.contactDetails{
+        padding-left: 1rem;
         width: auto;
     }
     div.icons a, div.icons p {
-        text-indent: 0;
+        text-indent: 0rem;
     }
 }
 

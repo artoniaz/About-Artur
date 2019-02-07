@@ -131,6 +131,12 @@ div.mobileDescribtion i{
 }
 
 @media all and (max-width: 320px) {
+    div.sliderImg button {
+        padding: 0.5rem 2rem;
+    }
+    button.CVbtn a{
+        font-size: 1rem;
+    }
     .title {
         font-size: 2.5rem;
     }

@@ -64,6 +64,8 @@ header div.links a{
 
 }
 
+
+
 @media all and (max-width: 320px) and (orientation: portrait){
     header .name {
         margin-top: 3rem;
@@ -79,6 +81,21 @@ header div.links a{
         font-size: 1.4rem;
         margin: 1rem 3rem;
         padding: 0.8rem;
+    }
+}
+
+@media all and (max-height: 490px) and (orientation: portrait){
+    header .name {
+        margin-top: 0;
+    }
+    header h2 {
+        margin: 0 2rem 0 2rem;
+    }
+    header ul {
+        margin-top: 0;
+    }
+    header div.links{
+        display: none;
     }
 }
 
