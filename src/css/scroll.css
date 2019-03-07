@@ -88,7 +88,7 @@ section.hideMenu{
 
 
 
-@media all and (min-width: 1024px) and (orientation: landscape) {
+@media all and (min-width: 1124px) and (orientation: landscape) {
     #menu {
         display: flex;
         padding: 0 5rem;
