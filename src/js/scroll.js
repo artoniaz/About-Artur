@@ -31,7 +31,8 @@ const hideMenuOptions = () => {
     menuUl.removeClass("menuListActive");
 };
 
-const scrollToSection = function () {
+const scrollToSection = function (e) {
+    e.preventDefault();
     let liClassName = $(this).find("a").attr("class");
     let sectionId = "#" + sectionsIds.filter(el => el == liClassName);
 
