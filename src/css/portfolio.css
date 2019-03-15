@@ -24,7 +24,7 @@ div.activeImg:before{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    background-image: url("./src/img/technologies/git.png");
+    background-image: url("../img/technologies/git.png");
     background-size: cover;
     background-position: center;
 }
@@ -62,8 +62,12 @@ p.projectTxt a{
     text-decoration: none;
 }
 
+#weather div.projectImg {
+    background-image: url("../screens/weather.png");
+}
+
 #allen div.projectImg {
-    background-image: url("../img/background2.jpg");
+    background-image: url("../screens/allen.png");
 }
 
 #dragonBall div.projectImg {
