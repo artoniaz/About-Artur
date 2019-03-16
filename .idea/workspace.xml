@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d37559-3f83-4e34-8fee-7fbc9c908631" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/portfolio.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,20 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="427">
+              <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding>
                 <element signature="e#2641#2647#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/portfolio.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -103,6 +92,12 @@
               <item name="About-Artur-Zarzycki" type="b2602c69:ProjectViewProjectNode" />
               <item name="About-Artur-Zarzycki" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="About-Artur-Zarzycki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="About-Artur-Zarzycki" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -148,12 +143,12 @@
       <workItem from="1552043884469" duration="599000" />
       <workItem from="1552388761105" duration="1803000" />
       <workItem from="1552407473385" duration="36000" />
-      <workItem from="1552477404733" duration="1841000" />
+      <workItem from="1552477404733" duration="3222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16855000" />
+    <option name="totallyTimeSpent" value="18236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
@@ -263,15 +258,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="336">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="427">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
           <folding>
             <element signature="e#2641#2647#0" expanded="true" />
           </folding>
