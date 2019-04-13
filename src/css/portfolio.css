@@ -70,6 +70,10 @@ p.projectTxt a{
     background-image: url("../screens/allen.png");
 }
 
+#ticTacToe div.projectImg {
+    background-image: url("../screens/ticTacToe.png");
+}
+
 #dragonBall div.projectImg {
     background-image: url("../screens/DragonBall.png");
 }
@@ -88,7 +92,7 @@ p.projectTxt a{
         border: 5px solid white;
     }
 
-    div.project:nth-child(2), div.project:nth-child(4){
+    div.project:nth-child(2n){
         flex-direction: row-reverse;
     }
     div.project:nth-child(1), div.project:nth-child(2), div.project:nth-child(3){
